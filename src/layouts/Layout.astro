@@ -1,0 +1,21 @@
+---
+// src/layouts/Layout.astro
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{title}</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* ← Paste your entire <style> block from old index.html here (exactly the same) */
+    :root { --bg: #0c0c0c; --text: #eaeaea; --muted: #999; --link: #6cace4; --link-hover: #a0c4ff; }
+    /* ... all your CSS ... */
+  </style>
+</head>
+<body>
+  <slot /> <!-- This is where index.astro and blog posts go -->
+</body>
+</html>
