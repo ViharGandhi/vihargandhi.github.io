@@ -1,0 +1,13 @@
+title: Vihar Gandhi
+description: Be visionary work super hard get obsessed and leave it on god
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - .git
+  - .github
+  - node_modules
+  - package.json
+  - astro.config.mjs
+  - README.md  # Hides this from site
